@@ -1,7 +1,25 @@
 <template><div class="container">
-    <div class="header">You have accessed the feed</div>
+    <div class="header">
+        <div>You have accessed the feed </div>
+        <div style="color: yellowgreen;"> {{ displayName }}!!!
+        </div>
+    </div>
     <div class="main">This is only accessible upon login.</div>
   </div></template>
+
+
+<script setup>
+import { getAuth } from "firebase/auth";
+
+const auth = getAuth();
+const user = auth.currentUser;
+let displayName = "";
+
+if (user !== null) {
+  // Assign the user's displayName to the variable
+  displayName = user.displayName;
+}
+</script>
 
 
 <style>
@@ -27,6 +45,8 @@
   grid-area: main;
   text-align: center;
 }
+
+
 .footer {
   grid-area: footer;
 }
