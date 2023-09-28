@@ -1,7 +1,7 @@
 <template> 
     <div class="container">
       <div class="header">Welcome to GR APP</div>
-      <div class="main"></div>
+      <div class="main"> I Love Joena</div>
       <div class="footer">createdby:davi</div>
     </div>
     
