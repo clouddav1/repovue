@@ -6,8 +6,8 @@
       <nav>
        <RouterLink to="/">Home</RouterLink>
        <RouterLink to="/feed">Feed</RouterLink>
-       <RouterLink to="/register">Register</RouterLink>
-       <RouterLink to="/signin">Login</RouterLink>
+       <RouterLink v-if="!isLoggedIn" to="/register">Register</RouterLink>
+       <RouterLink v-if="!isLoggedIn" to="/signin">Login</RouterLink>
        <button @click="handleSignOut" v-if="isLoggedIn">Log Out</button>
       </nav>
     </div>
