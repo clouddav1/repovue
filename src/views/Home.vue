@@ -1,7 +1,7 @@
 <template> 
     <div class="container">
       <div class="header">Welcome to GR APP</div>
-      <div class="main" style="color: brown;"> <h1>I Love You Joena!</h1></div>
+      <div class="main" style="color: brown;"> <h1></h1></div>
       <div class="footer">createdby:davi</div>
     </div>
     
